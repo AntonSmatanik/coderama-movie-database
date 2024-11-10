@@ -1,4 +1,4 @@
-export const MOVIE_DB_API_URL = "http://www.omdbapi.com/";
+export const MOVIE_DB_API_URL = "https://www.omdbapi.com/";
 export const MOVIE_DB_API_KEY = "e6f90255";
 
 export const MINIMUM_SEARCH_LENGTH = 3;
