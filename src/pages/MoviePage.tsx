@@ -49,11 +49,17 @@ const MoviePage = () => {
 
   return (
     <div className="p-5">
-      <h1 className="text-xl md:text-2xl text-center mb-5">{data?.Title}</h1>
+      <h1 className="text-2xl md:text-3xl text-center mb-5">{data?.Title}</h1>
       <div className="flex flex-col space-y-5 md:flex-row md:space-x-5">
-        <img src={data?.Poster} alt={data?.Title} />
+        <img
+          className="border-4 rounded-md border-black"
+          src={data?.Poster}
+          alt={data?.Title}
+        />
         <div className="space-y-5">
-          {renderButton()}
+          <div className="flex justify-center md:justify-normal">
+            {renderButton()}
+          </div>
           <p>{data?.Plot}</p>
           <p>
             <span className="font-bold">Director:</span> {data?.Director}
