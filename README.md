@@ -2,7 +2,7 @@
 
 The application is created in **React**, with **Vite** build tool and **Typescript**. It consist of 3 (+ 1) pages.
 
-I decided to use **Tailwindcss** for styling and **React Query** for data manipulation.
+I decided to use **Tailwindcss** (lightweight, performative, highly customizable) for styling and **React Query** for data manipulation.
 
 **Code splitting** and **lazy loading** techniques are used along with some others.
 
