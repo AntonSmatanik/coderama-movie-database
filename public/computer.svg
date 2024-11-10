@@ -1,0 +1,19 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 100 100"
+  width="128"
+  height="128"
+  fill="none"
+>
+  <!-- Monitor -->
+  <rect x="10" y="10" width="80" height="50" rx="5" fill="#D4AF37" stroke="#B8860B" stroke-width="2" />
+
+  <!-- Screen -->
+  <rect x="15" y="15" width="70" height="40" fill="#222" />
+
+  <!-- Stand -->
+  <rect x="40" y="65" width="20" height="5" fill="#D4AF37" />
+  
+  <!-- Keyboard -->
+  <rect x="20" y="75" width="60" height="10" rx="2" fill="#D4AF37" stroke="#B8860B" stroke-width="1" />
+</svg>
