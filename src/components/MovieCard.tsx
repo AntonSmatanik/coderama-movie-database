@@ -11,6 +11,7 @@ const MovieCard = ({ movie }: { movie: Movie }) => (
       src={movie.Poster}
       alt={movie.Title}
       className="w-full h-48 object-cover"
+      loading="lazy"
     />
     <h2 className="mt-2 font-bold">{movie.Title}</h2>
   </Link>

@@ -1,10 +1,10 @@
 # Simple movie application
 
-Application is created in **React**, with **Vite** build tool and **Typescript**. It consist of 3 pages.
+The application is created in **React**, with **Vite** build tool and **Typescript**. It consist of 3 (+ 1) pages.
 
-I decided not to use any heavy weight packages, but prefer **Tailwindcss** for styling and **React Query** for data manipulation.
+I decided to use **Tailwindcss** for styling and **React Query** for data manipulation.
 
-And yes I've used **code splitting** :)
+**Code splitting** and **lazy loading** techniques are used along with some others.
 
 ## Pages
 
