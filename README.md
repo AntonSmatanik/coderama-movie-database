@@ -4,7 +4,7 @@ The application is built using **React**, powered by the **Vite** build tool, an
 
 I decided to use **Tailwindcss** (lightweight, performative, highly customizable, etc.) for styling and **React Query** (out-of-the-box solutions, caching, build-in functions, etc.) for data manipulation.
 
-**Code splitting** and **lazy loading** techniques are used along with some others.
+**Code splitting** and **lazy loading** techniques are used along with some others (**preconnect**, **dns-prefetch**).
 
 ## Pages
 
