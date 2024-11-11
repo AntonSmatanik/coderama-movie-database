@@ -2,7 +2,7 @@
 
 The application is created in **React**, with **Vite** build tool and **Typescript**. It consist of 3 (+ 1) pages.
 
-I decided to use **Tailwindcss** (lightweight, performative, highly customizable) for styling and **React Query** for data manipulation.
+I decided to use **Tailwindcss** (lightweight, performative, highly customizable, etc.) for styling and **React Query** (out-of-the-box solutions, caching, build-in functions, etc.) for data manipulation.
 
 **Code splitting** and **lazy loading** techniques are used along with some others.
 
@@ -10,17 +10,19 @@ I decided to use **Tailwindcss** (lightweight, performative, highly customizable
 
 ### Movie search
 
-There is a search field without any button. The results are displayed as the user types in them. Of course, debounce delay is implemented, which is easily configurable in the settings.
+There is a search field without any button. The results are displayed as the user types in them. Debounce delay is implemented and is configurable in [settings](/src/config/index.ts).
 
 While the results are being retrieved from the API, a corresponding message is displayed to the user.
 
-If there are no results to display, a clear message will be displayed to the user informing them of this.
+If there are no results to display, a clear message is displayed to the user informing them of this.
 
-All results are cached. If a user searches for the same movie twice, the app does not make a new API request, but instead uses the cached results.
+Results are cached. If a user searches for the same movie twice, the app does not make a new API request, but instead uses the cached data.
 
 Infinite scrolling works well, it takes new data from the API and displays it as the user scrolls down.
 
 If user changes the route and then returns back, restored are scroll position, search results and search query.
+
+With search query persisted in a localstorage, the results can be easily retrieved again, even after user close and reopen the browser.
 
 ### Movie detail
 
@@ -31,6 +33,8 @@ If the movie id is incorrect, the user is informed by an error message returned 
 The page contains all information about the selected film (title, year, genre, poster, etc.).
 
 The star button saves/removes the movie to/from favorites.
+
+Movie API results are cached, so a new request for the same movie is not necessary.
 
 ### My favorite movies
 

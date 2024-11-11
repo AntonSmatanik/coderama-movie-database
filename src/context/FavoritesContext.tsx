@@ -1,4 +1,10 @@
-import { createContext, useContext, useEffect, useReducer } from "react";
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useReducer,
+} from "react";
 import { FAVORITES_KEY } from "../config";
 import { MovieDetailResponse } from "../types";
 import { initFromLocalStorage } from "../utils";
@@ -44,11 +50,7 @@ const favoritesReducer = (
   }
 };
 
-export const FavoritesProvider = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+export const FavoritesProvider = ({ children }: { children: ReactNode }) => {
   const [favorites, dispatch] = useReducer(favoritesReducer, [], () =>
     initFromLocalStorage(FAVORITES_KEY)
   );
