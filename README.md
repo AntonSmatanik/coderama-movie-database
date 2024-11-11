@@ -1,6 +1,6 @@
 # Simple movie application
 
-The application is created in **React**, with **Vite** build tool and **Typescript**. It consist of 3 (+ 1) pages.
+The application is built using **React**, powered by the **Vite** build tool, and written using **Typescript**. It consist of 3 (+ 1) pages.
 
 I decided to use **Tailwindcss** (lightweight, performative, highly customizable, etc.) for styling and **React Query** (out-of-the-box solutions, caching, build-in functions, etc.) for data manipulation.
 
@@ -45,7 +45,7 @@ Favorites are kept in local storage so they are refreshed even if the user close
 ## Corner cases
 
 - if an incorrect route is entered, the router displays a Not Found page
-- if movie id is incorrect, Movie detail page displays an error
+- if movie id is incorrect, Movie detail page displays an appropriate error
 - if movie can't be found in the API, Error message from the response is displayed
 - if is used wrong API KEY, Error message from the response is displayed
 - if API URL is wrong, Error message is displayed
@@ -78,7 +78,7 @@ There are no lint errors, no lint warnings or console warnings.
 ```bash
 - dev - starts the dev server
 - build - compiles and bundles the project’s source code
-- lint - runs a linter to check the code for style issues, potential errors, or deviations from coding standards
+- lint - runs a linter to check the code for style issues, potential errors, or deviations from standards
 - preview - launch the application that was previously built into the dist folder
 - test - run tests for the project
 ```
