@@ -12,10 +12,6 @@ const SearchPage = () => {
   const { data, fetchNextPage, hasNextPage, isFetching, isError, error } =
     useSearchMovies(query);
 
-  const handleScroll = useCallback(() => {
-    sessionStorage.setItem(SCROLL_KEY, window.scrollY.toString());
-  }, []);
-
   useEffect(() => {
     const savedScrollPosition = sessionStorage.getItem(SCROLL_KEY);
 
@@ -26,12 +22,16 @@ const SearchPage = () => {
       });
     }
 
+    const handleScroll = () => {
+      sessionStorage.setItem(SCROLL_KEY, window.scrollY.toString());
+    };
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [handleScroll]);
+  }, []);
 
   const handleSearchChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
